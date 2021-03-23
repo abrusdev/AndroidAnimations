@@ -1,0 +1,3 @@
+include ':property-animations'
+include ':app'
+rootProject.name = "AndroidAnimations"
