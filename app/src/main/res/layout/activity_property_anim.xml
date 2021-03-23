@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.property.PropertyAnimActivity">
+
+    <ImageView
+        android:id="@+id/globeImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="100dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/ic_earth"
+        tools:ignore="ContentDescription" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="20dp"
+        android:orientation="vertical"
+        tools:ignore="ButtonStyle">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/fadeBtn"
+                android:layout_width="0dp"
+                android:layout_height="55dp"
+                android:layout_weight="1"
+                android:text="@string/fade" />
+
+            <Button
+                android:id="@+id/scaleBtn"
+                android:layout_width="0dp"
+                android:layout_height="55dp"
+                android:layout_marginStart="15dp"
+                android:layout_weight="1"
+                android:text="@string/scale" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <Button
+                android:id="@+id/rotateBtn"
+                android:layout_width="0dp"
+                android:layout_height="55dp"
+                android:layout_weight="1"
+                android:text="@string/rotate" />
+
+            <Button
+                android:id="@+id/translateBtn"
+                android:layout_width="0dp"
+                android:layout_height="55dp"
+                android:layout_marginStart="15dp"
+                android:layout_weight="1"
+                android:text="@string/translate" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

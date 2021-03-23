@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">AndroidAnimations</string>
+    <string name="fade">Fade</string>
+    <string name="scale">Scale</string>
+    <string name="translate">Translate</string>
+    <string name="rotate">rotate</string>
 </resources>
