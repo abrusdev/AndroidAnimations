@@ -2,6 +2,8 @@ package ru.abrus.androidanimations.ui.property
 
 import android.animation.Animator
 import android.animation.AnimatorInflater
+import android.animation.ObjectAnimator
+import android.animation.ValueAnimator
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -10,7 +12,7 @@ import kotlinx.android.synthetic.main.activity_property_anim.*
 import ru.abrus.androidanimations.R
 
 class PropertyAnimActivity : AppCompatActivity() {
-    companion object{
+    companion object {
         private const val TAG = "PropertyAnimation"
     }
 
@@ -22,7 +24,7 @@ class PropertyAnimActivity : AppCompatActivity() {
 
         scaleBtn.setOnClickListener { animate(R.animator.scale) }
 
-        rotateBtn.setOnClickListener { animate(R.animator.rotate) }
+        rotateBtn.setOnClickListener { animate("rotationX",0f,360f) }
 
         translateBtn.setOnClickListener { animate(R.animator.translate) }
     }
@@ -42,6 +44,16 @@ class PropertyAnimActivity : AppCompatActivity() {
     private fun animate(id: Int) {
         AnimatorInflater.loadAnimator(this, id).apply {
             setTarget(globeImage)
+            initListener()
+            start()
+        }
+    }
+
+    private fun animate(name: String, fromValue: Float, toValue: Float) {
+        ObjectAnimator.ofFloat(globeImage, name, fromValue, toValue).apply {
+            duration = 500
+            repeatMode = ValueAnimator.REVERSE
+            repeatCount = 1
             initListener()
             start()
         }
