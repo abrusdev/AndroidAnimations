@@ -4,4 +4,6 @@
     <string name="scale">Scale</string>
     <string name="translate">Translate</string>
     <string name="rotate">rotate</string>
+    <string name="anima_via_code">anima via code</string>
+    <string name="animate_via_xml">animate via xml</string>
 </resources>

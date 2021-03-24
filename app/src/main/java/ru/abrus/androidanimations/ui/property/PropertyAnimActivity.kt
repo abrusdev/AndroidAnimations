@@ -4,14 +4,15 @@ import android.animation.Animator
 import android.animation.AnimatorInflater
 import android.animation.ObjectAnimator
 import android.animation.ValueAnimator
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import androidx.appcompat.app.AppCompatActivity
 import androidx.core.animation.addListener
 import kotlinx.android.synthetic.main.activity_property_anim.*
 import ru.abrus.androidanimations.R
 
 class PropertyAnimActivity : AppCompatActivity() {
+
     companion object {
         private const val TAG = "PropertyAnimation"
     }
@@ -24,7 +25,7 @@ class PropertyAnimActivity : AppCompatActivity() {
 
         scaleBtn.setOnClickListener { animate(R.animator.scale) }
 
-        rotateBtn.setOnClickListener { animate("rotationX",0f,360f) }
+        rotateBtn.setOnClickListener { animate("rotationX", 0f, 360f) }
 
         translateBtn.setOnClickListener { animate(R.animator.translate) }
     }
