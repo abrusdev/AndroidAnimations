@@ -24,7 +24,7 @@ class MainActivity : AppCompatActivity() {
         }.apply {
             data = arrayListOf(
                 MainData("Property Animation", PropertyAnimActivity::class.java),
-                MainData("Choreographing Animation", ChoreographingAnimActivity::class.java)
+                MainData("Choreographing Animation", ChoreographingAnimActivity::class.java, R.drawable.image_anim_2)
 
             )
         }

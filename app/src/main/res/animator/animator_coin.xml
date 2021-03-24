@@ -2,16 +2,65 @@
 <set xmlns:android="http://schemas.android.com/apk/res/android"
     android:ordering="sequentially">
 
-    <objectAnimator
-        android:propertyName="translationY"
-        android:valueType="floatType"
-        android:valueFrom="0"
-        android:duration="500"
-        android:valueTo="400"/>
+    <set android:ordering="together">
+        <objectAnimator
+            android:duration="500"
+            android:propertyName="translationY"
+            android:valueFrom="0"
+            android:valueTo="-500"
+            android:valueType="floatType" />
+
+        <objectAnimator
+            android:duration="500"
+            android:propertyName="rotationX"
+            android:valueFrom="0"
+            android:valueTo="360"
+            android:valueType="floatType" />
+
+        <objectAnimator
+            android:duration="500"
+            android:propertyName="scaleX"
+            android:valueFrom="1"
+            android:valueTo="1.6"
+            android:valueType="floatType" />
+
+        <objectAnimator
+            android:duration="500"
+            android:propertyName="scaleY"
+            android:valueFrom="1"
+            android:valueTo="1.6"
+            android:valueType="floatType" />
+    </set>
 
 
-    <set>
+    <set android:ordering="together">
+        <objectAnimator
+            android:duration="1000"
+            android:propertyName="translationY"
+            android:valueFrom="-500"
+            android:valueTo="0"
+            android:valueType="floatType" />
 
+        <objectAnimator
+            android:duration="500"
+            android:propertyName="scaleX"
+            android:valueFrom="1.6"
+            android:valueTo="1"
+            android:valueType="floatType" />
+
+        <objectAnimator
+            android:duration="500"
+            android:propertyName="scaleY"
+            android:valueFrom="1.6"
+            android:valueTo="1"
+            android:valueType="floatType" />
+
+        <objectAnimator
+            android:duration="1000"
+            android:propertyName="rotationX"
+            android:valueFrom="0"
+            android:valueTo="720"
+            android:valueType="floatType" />
     </set>
 
 

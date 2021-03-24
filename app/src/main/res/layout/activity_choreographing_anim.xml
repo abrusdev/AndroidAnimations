@@ -9,8 +9,8 @@
     <ImageView
         android:id="@+id/coinImage"
         android:layout_width="100dp"
-        android:layout_gravity="center_horizontal"
         android:layout_height="100dp"
+        android:layout_gravity="center_horizontal"
         android:layout_marginTop="250dp"
         android:adjustViewBounds="true"
         android:src="@drawable/ic_coin"
@@ -26,25 +26,20 @@
         android:orientation="vertical"
         tools:ignore="ButtonStyle">
 
-        <LinearLayout
+        <Button
+            android:id="@+id/setFromXml"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="55dp"
+            android:layout_weight="1"
+            android:text="@string/animate_via_xml" />
 
-            <Button
-                android:id="@+id/setFromXml"
-                android:layout_width="0dp"
-                android:layout_height="55dp"
-                android:layout_weight="1"
-                android:text="@string/animate_via_xml" />
-
-            <Button
-                android:id="@+id/setFromCode"
-                android:layout_width="0dp"
-                android:layout_height="55dp"
-                android:layout_marginStart="15dp"
-                android:layout_weight="1"
-                android:text="@string/anima_via_code" />
-        </LinearLayout>
+        <Button
+            android:layout_marginTop="10dp"
+            android:id="@+id/setFromCode"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_weight="1"
+            android:text="@string/anima_via_code" />
 
 
     </LinearLayout>
