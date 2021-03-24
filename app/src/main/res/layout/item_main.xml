@@ -24,8 +24,8 @@
         <View
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:alpha="0.5"
-            android:background="@color/purple_700" />
+            android:alpha="0.6"
+            android:background="@color/purple_200" />
 
         <View
             android:id="@+id/mainBack"
@@ -41,7 +41,7 @@
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
             android:gravity="center"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
             android:textSize="24sp"
             tools:text="Property Animation" />
 
