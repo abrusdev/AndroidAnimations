@@ -22,12 +22,14 @@
             android:propertyName="scaleX"
             android:valueFrom="1"
             android:valueTo="1.6"
+            android:interpolator="@android:anim/bounce_interpolator"
             android:valueType="floatType" />
 
         <objectAnimator
             android:duration="500"
             android:propertyName="scaleY"
             android:valueFrom="1"
+            android:interpolator="@android:anim/bounce_interpolator"
             android:valueTo="1.6"
             android:valueType="floatType" />
     </set>

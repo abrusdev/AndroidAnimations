@@ -21,7 +21,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="20dp"
         android:orientation="vertical"
         tools:ignore="ButtonStyle">
@@ -40,6 +40,22 @@
             android:layout_height="55dp"
             android:layout_weight="1"
             android:text="@string/anima_via_code" />
+
+        <Button
+            android:layout_marginTop="10dp"
+            android:id="@+id/viewPropertyAnimator"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_weight="1"
+            android:text="Use View Property Animator" />
+
+        <Button
+            android:layout_marginTop="10dp"
+            android:id="@+id/propertyValuesHolder"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_weight="1"
+            android:text="Use Property Values Holder" />
 
 
     </LinearLayout>
