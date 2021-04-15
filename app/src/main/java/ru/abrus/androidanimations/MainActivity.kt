@@ -6,8 +6,8 @@ import android.os.Bundle
 import kotlinx.android.synthetic.main.activity_main.*
 import ru.abrus.androidanimations.data.MainData
 import ru.abrus.androidanimations.ui.adapters.MainAdapter
-import ru.abrus.androidanimations.ui.choreographing.ChoreographingAnimActivity
-import ru.abrus.androidanimations.ui.property.PropertyAnimActivity
+import ru.abrus.androidanimations.ui.animations.ChoreographingAnimActivity
+import ru.abrus.androidanimations.ui.animations.PropertyAnimActivity
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

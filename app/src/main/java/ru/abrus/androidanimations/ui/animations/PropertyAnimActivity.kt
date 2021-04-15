@@ -1,4 +1,4 @@
-package ru.abrus.androidanimations.ui.property
+package ru.abrus.androidanimations.ui.animations
 
 import android.animation.Animator
 import android.animation.AnimatorInflater

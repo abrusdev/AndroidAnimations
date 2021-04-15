@@ -1,4 +1,4 @@
-package ru.abrus.androidanimations.ui.choreographing
+package ru.abrus.androidanimations.ui.animations
 
 import android.animation.AnimatorInflater
 import android.animation.AnimatorSet
